@@ -18,12 +18,31 @@ Käyttöjärjestelmä: Windows 11 Pro 23H2
 
 ## aa) Tämä ei kuulu tehtävänantoon 
 
+*20.9.2024 klo 16:55*
+
 Edellisenä läksynä vuokrasin DigitalOceanista palvelimen, joka sijaitsee Saksassa. Nyt kun viime oppitunnilla käytiin läpi SSH-avaimella kirjautuminen, vuokraan palvelimem UpCloudista, koska haluan kotimaisen palvelimen.
+
+Aluksi käyn DigitalOceanissa poistamassa aiemmin vuokraamani "Dropletin"
+
+![digitalDroplet](https://github.com/user-attachments/assets/461941dc-b62e-4858-a40e-b6fd76662dbf)
+
+Nyt, kun vanha palvelin on tuhottu, on aika käydä luomassa SSH-avainpari virtuaalikoneelleni luennolla tekemieni muistiinpanojen avulla:
+
+![sshohje](https://github.com/user-attachments/assets/45a43c56-d71e-4a39-8db5-55fd8bb6004f)
+
+Luonnin jälkeen käyn kopioimassa julkisen avaimen UpCloud-palvelimen luontia varten.
+
+![historia](https://github.com/user-attachments/assets/fa90b43d-ea7d-44d7-b740-1fd5adfc0b77)
+
+
+
+
+
 
 
 
 ## a) Kotisivu
-#### Tee vähintään kolmen erillisen weppisivun kotisivu ja kopioi se näkymään palvelimellesi. Jos sinulla on oikea palvelin Internetissä, kannattaa käyttää sitä. Käytä name based virtual hosting tekniikkaa. Sivujen muokkaamisen pitää onnistua ilman pääkäyttäjän oikeuksia, niiden kopioiminen pääkäyttäjänä testisivun paikalle ei käy. Kotisivujen ei tarvitse olla hienoja, mutta niiden tulee olla validia HTML:ää ja linkittää toisiinsa.
+#### Tehtävä: Tee vähintään kolmen erillisen weppisivun kotisivu ja kopioi se näkymään palvelimellesi. Jos sinulla on oikea palvelin Internetissä, kannattaa käyttää sitä. Käytä name based virtual hosting tekniikkaa. Sivujen muokkaamisen pitää onnistua ilman pääkäyttäjän oikeuksia, niiden kopioiminen pääkäyttäjänä testisivun paikalle ei käy. Kotisivujen ei tarvitse olla hienoja, mutta niiden tulee olla validia HTML:ää ja linkittää toisiinsa.
 
 
 
