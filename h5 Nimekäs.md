@@ -20,7 +20,7 @@ Käyttöjärjestelmä: Windows 11 Pro 23H2
 
 *20.9.2024 klo 16:55*
 
-Edellisenä läksynä vuokrasin DigitalOceanista palvelimen, joka sijaitsee Saksassa. Nyt kun viime oppitunnilla käytiin läpi SSH-avaimella kirjautuminen, vuokraan palvelimem UpCloudista, koska haluan kotimaisen palvelimen.
+#### Edellisenä läksynä vuokrasin DigitalOceanista palvelimen, joka sijaitsee Saksassa. Nyt kun viime oppitunnilla käytiin läpi SSH-avaimella kirjautuminen, vuokraan palvelimem UpCloudista, koska haluan kotimaisen palvelimen.
 
 Aluksi käyn DigitalOceanissa poistamassa aiemmin vuokraamani "Dropletin"
 
@@ -34,10 +34,29 @@ Luonnin jälkeen käyn kopioimassa julkisen avaimen UpCloud-palvelimen luontia v
 
 ![historia](https://github.com/user-attachments/assets/fa90b43d-ea7d-44d7-b740-1fd5adfc0b77)
 
+UpCloud haluaa aluksi varmistaa että en ole robotti:
 
+![captcha](https://github.com/user-attachments/assets/88e77d01-bf39-493c-ab9d-33ce5fcf458c)
 
+Aloitetaan palvelimen vuokraaminen: ``+Deploy a new server``, valitsen sijainniksi Helsinki, halvin mahdollinen 3€/kk maksava palvelin riittää mainiosti, sillä se on parempi kuin kalliimpi halvin palvelin DigitalOceanissa.
 
+![halvin](https://github.com/user-attachments/assets/aa565685-5175-4d7c-9c4e-498f260b6ac0)
 
+Luonnollisesti valitaan Debian Linux käyttöjärjestelmäksi. Jätetään varmuuskopiot ja muut ylimääräiset palvelut pois. Lisätessä SSH-avainta ilmeni pieni ongelma, en ollut tajunnut, että koko litania tulee kopioida, eikä ainoastaan hämärän näköinen kirjoitus.
+
+![sshokkey](https://github.com/user-attachments/assets/a7cd5cc2-98d3-4ebe-b684-6ad077e7641b)
+
+Pienen perus-säädön jälkeen sain palvelimen toimintaan, nyt täytyy tehdä pienimuotoinen sijoitus UpCloudille, jotta palvelimeni pysyy hengissä.
+
+![upCloudi](https://github.com/user-attachments/assets/7fa3fc10-3dae-4084-af82-81213623d342)
+
+Nyt laitan palvelimen tulille ja samat alkusäädöt, kuin aiemmassa läksyssä. Mikäli ongelmia ei ilmene, en tähän enää vaihe vaiheelta kirjaa kaikkea.
+
+*klo 17:25, aikaa kului 30min*
+
+*root*-käyttäjänä pääsin sisälle palvelimeen luomaan käyttäjätunnuksen ja antamaan sille tarvittavat oikeudet, mutta yhdistämisessä on ongelmia. Täytyy lukea [täältä](https://upcloud.com/resources/tutorials/use-ssh-keys-authentication) lisää ongelman ratkaisemiseksi.
+
+![failedConnect](https://github.com/user-attachments/assets/06fa17b0-9fca-4a03-9404-7a9d99c54899)
 
 
 
@@ -57,7 +76,9 @@ Luonnin jälkeen käyn kopioimassa julkisen avaimen UpCloud-palvelimen luontia v
 ## Otsikko
 
 
+## Lähteet
 
+UpCloud. Faq. Luettavissa: https://upcloud.com/resources/tutorials/use-ssh-keys-authentication. Luettu 20.9.2024<br>
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com<br><br>
