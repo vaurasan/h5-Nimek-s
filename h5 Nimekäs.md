@@ -101,8 +101,21 @@ Ei ihan vielä se mitä haetaan. Luen asioita [täältä](https://www.veeble.org
 
 ![chmod777](https://github.com/user-attachments/assets/3c0628d3-cd2a-487e-b85c-4fc54fc8ab14)
 
+Kävin luomassa public_html kansion ja santerivauramo.com.conf tekstitiedoston
 
+![comconf](https://github.com/user-attachments/assets/0fd3683d-7b1f-40e0-845d-61eda5584140)
 
+Eipä ollut tarkoitus luoda public_html kansiota, vaan tekstitiedosto. ``rm -r public_html/``, eli poistan kansion ja luon public_html tekstitiedoston ``micro public_html``, sinne laitan seuraavaa: 
+
+![htmlekatoka](https://github.com/user-attachments/assets/eb4efdbf-aeaf-4147-aeb5-53cdd887f968)
+
+Järjen mukaan tämän pitäisi toimia, kun teen samaan kansioon eka.html ja toka.html tiedostot. Nyt olen saanut apachen kohtalaiseen solmuun:
+
+![imagesolmussa](https://github.com/user-attachments/assets/4e0f2b48-3380-4abc-8d21-afc1c01b0812)
+
+Pistää silmään rivi jossa lukee ``AH00526: Syntax error on line 3 of /etc/apache2/sites-enabled/santerivauramo.com.conf:``, täytynee mennä muokkaamaan ``/etc/apache2/sites-enabled/santerivauramo.com.conf``
+
+Kävin poistamassa tuon koko tiedoston, muuten en saanut apachelle tehtyä mitään, nyt pystyy taas potkimaan demonia.
 
 
 ## Otsikko
