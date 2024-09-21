@@ -153,7 +153,9 @@ Piti vielä muokata linkit näyttämään tältä, jotta ne toimivat:
 
 ![linkit](https://github.com/user-attachments/assets/babc40c2-a32d-47b1-b285-3560772bce08)
 
+Jostain syystä windowsin chromella ei nyt toimi tuo sivu, mutta kännykällä pääsin ja kaikki linkit toimivat.
 
+*klo 19:18, ei tullut hienoja ja aikaa kului, paljon tässäkin oppi asioita, parempi tehdä virheet tässä vaiheessa*
 
 
 
