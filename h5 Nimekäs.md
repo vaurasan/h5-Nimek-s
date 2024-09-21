@@ -68,14 +68,24 @@ Hyödynsin tätä [ohjetta](https://upcloud.com/resources/tutorials/regaining-ac
 
 Consolen avulla pystyin muokkaamaan palvelimen SSH-kansion tiedostoja. ``sudo nano /etc/ssh/sshd_config``, sieltä muutin ensin *.conf tiedoston pois käytöstä, laitoin salasanakirjautumisen päälle, sekä sallin SSH-avaimella kirjautumisen, joka oli mystisesti mennyt pois päältä. Tämän jälkeen lähetin palvelimelle vielä oman SSH-public-avaimen komennolla ``ssh-copy-id santeri@94.237.35.220``, kävin muuttamassa *.conf tiedoston takaisin sallituksi, nyt saatoin kirjautua palvelimelle ilman salasanaa. 
 
+![ilmansala](https://github.com/user-attachments/assets/972a582f-90d6-4017-ae72-68912c3da92b)
+
 Tämän jälkeen tein perus asennukset ``sudo apt-get update``, ``sudo apt-get install ufw micro apache2``, tein palomuuriin reiät ``sudo ufw allow 22/tcp``, ``sudo ufw allot 80/tcp``, laitoin palomuurin päälle ``sudo ufw enable``
 
 ## a) Kotisivu
 #### Tehtävä: Tee vähintään kolmen erillisen weppisivun kotisivu ja kopioi se näkymään palvelimellesi. Jos sinulla on oikea palvelin Internetissä, kannattaa käyttää sitä. Käytä name based virtual hosting tekniikkaa. Sivujen muokkaamisen pitää onnistua ilman pääkäyttäjän oikeuksia, niiden kopioiminen pääkäyttäjänä testisivun paikalle ei käy. Kotisivujen ei tarvitse olla hienoja, mutta niiden tulee olla validia HTML:ää ja linkittää toisiinsa.
 
+*21.9.2024 klo 13:34*
 
+Lähden muistelemaan aiemmista tehtävistä, ajoin seuraavat komennot, samalla laitoin micro-editorin oletukseksi
 
+![histapache](https://github.com/user-attachments/assets/cd2d0c4e-90cf-4b08-8f07-719b58964684)
 
+Tässä vaiheessa kirjasin publicsites/santerivauramo.com:iin:
+
+![publicsites](https://github.com/user-attachments/assets/85a46afe-abb1-4e35-bade-a9715d4cde12)
+
+~/publicsites/santerivauramo.com$ kansiossa luon index.html tiedoston komennolla ``micro index.html``, lähden rakentamaan aiemman testisivun päälle, lisään vain linkit kahteen muuhun sivuun samassa kansiossa. Katson vielä ohjeita html:n kirjoittamiseen [täältä](https://www.w3schools.com/html/).
 
 
 ## Otsikko
@@ -90,6 +100,7 @@ Tämän jälkeen tein perus asennukset ``sudo apt-get update``, ``sudo apt-get i
 
 UpCloud. Faq. Luettavissa: https://upcloud.com/resources/tutorials/use-ssh-keys-authentication. Luettu 20.9.2024<br>
 UpCloud. How to regain access to a server that was deployed using SSH keys. Luettavissa: https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys. Luettu 21.9.2024<br>
+W3Schools. HTML. Luettavissa: https://www.w3schools.com/html/. Luettu 21.9.2024
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com<br><br>
