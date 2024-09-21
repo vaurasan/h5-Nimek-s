@@ -89,6 +89,18 @@ Tässä vaiheessa kirjasin publicsites/santerivauramo.com:iin:
 
 ![indexi](https://github.com/user-attachments/assets/a07ffdc9-e54d-4296-9f1a-4b0cbc7ed0ea)
 
+Tässä vaiheessa sivu ei edes toimi, jotakin on unohtunut. Kokeilen ``sudoedit /etc/hosts`` ja lisään santerivauramo.com:n sinne.
+
+![edithosts](https://github.com/user-attachments/assets/ff631608-49a5-433b-8624-85355bcc8f59)
+
+Kuten kuvassa lukee, täytyy tämän toimiakseen käydä ``/etc/cloud/templates/hosts.debian.tmpl``:ssä lisäämässä tiedot myös sinne. Kävin myös [tämän](https://www.codingcommanders.com/LAMP/apache_default_page.php) ohjeen mukaan poistamassa apachen perus index.html:n ja santerivauramo.com näyttää nyt tältä:
+
+![indexiOn](https://github.com/user-attachments/assets/5a20da86-1f9c-4651-9fe1-02bf2920c010)
+
+Ei ihan vielä se mitä haetaan. Luen asioita [täältä](https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/) ja myös [täältä](https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied). Kävin luomassa /var/www kansioon santerivauramo.com kansion, vaan eipä ollut oikeuksia, joten annoin itselleni oikeudet
+
+![chmod777](https://github.com/user-attachments/assets/3c0628d3-cd2a-487e-b85c-4fc54fc8ab14)
+
 
 
 
@@ -103,6 +115,8 @@ Tässä vaiheessa kirjasin publicsites/santerivauramo.com:iin:
 
 ## Lähteet
 
+Nair, N. 2024. How to setup Apache Web Server to host a website in Linux. Luettavissa: https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/. Luettu 21.9.2024<br>
+Stackoverflow. Keskustelu. Luettavissa: https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied. Luettu 21.9.2024
 UpCloud. Faq. Luettavissa: https://upcloud.com/resources/tutorials/use-ssh-keys-authentication. Luettu 20.9.2024<br>
 UpCloud. How to regain access to a server that was deployed using SSH keys. Luettavissa: https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys. Luettu 21.9.2024<br>
 Validator. W3Scools. Luettavissa: https://validator.w3.org/nu/#textarea. Luettu 21.9.2024<br>
