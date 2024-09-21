@@ -89,7 +89,7 @@ Tässä vaiheessa kirjasin publicsites/santerivauramo.com:iin:
 
 ![indexi](https://github.com/user-attachments/assets/a07ffdc9-e54d-4296-9f1a-4b0cbc7ed0ea)
 
-Tässä vaiheessa sivu ei edes toimi, jotakin on unohtunut. Kokeilen ``sudoedit /etc/hosts`` ja lisään santerivauramo.com:n sinne.
+Tässä vaiheessa sivu ei edes toimi, jotakin on unohtunut. Kokeilen ``sudoedit /etc/hosts`` ja lisään santerivauramo.com:n sinne. (myöhemmin tajusin, että tämä oli nimipalvelua simuloidessa tarpeellinen, ei tässä)
 
 ![edithosts](https://github.com/user-attachments/assets/ff631608-49a5-433b-8624-85355bcc8f59)
 
@@ -128,6 +128,30 @@ https://httpd.apache.org/docs/2.4/vhosts/ Täältä löytyi komento ``apachectl 
 ![imagerrorias](https://github.com/user-attachments/assets/7c431cd3-d5fa-4e4e-8750-42584a4d3c9b)
 
 *klo 16:05, tauko*
+
+*klo 18:35* lenkin ja suihkun jälkeen sain uutta virtaa ranteisiin. Yritän https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04 tämän ohjeen avulla tehdä uusiksi tekemättömän.
+
+![consoleoikeus](https://github.com/user-attachments/assets/d8c286a4-b641-4326-8a8a-5d7ef37d33da)
+
+Loin /var/www kansioon omien sivujen kansion, jonne loin public_html-kansion, tämänhän loin jo aiemmin, mutta ymmärsin ohjeet väärin. Seuraavaksi annoin itselle oikeudet muokata kyseistä kansiota ja loin samanlaisen index.html tiedoston minkä aiemmin loin muualle. Muutin ``sudo micro /etc/apache2/sites-available/santerivauramo.com.conf``:sta seuraavanlaisen:
+
+![servernamealias](https://github.com/user-attachments/assets/87cf48ea-10a8-4d7d-a5bd-a3439a3b26fb)
+
+Nyt demonin potkaisun jälkeen pääsin sivuille. Olin jo aiemmin sallinut ``sudo a2ensite santerivauramo.com.conf``:n, ja disabloinut default conffin, joten niitä ei tarvinnut enää nyt tehdä.
+
+![Ekatoimii](https://github.com/user-attachments/assets/20e452a2-a6ab-4571-ba97-fa6d82f601bb)
+
+Nyt vaan kopioin html:t kahteen tiedostoon, joten saan linkit toimimaan. www.santerivauramo.com
+
+Huomasin että vasta ``sudo chmod -R 777 /var/www/`` komento antoi luvan muokata tiedostoja normaalin käyttäjän oikeuksin.
+
+Loin kansioon siis ``index.html``, ``eka.html``, ja ``toka.html``-tiedostot. Sisällöt näyttävät kutakuinkin kaikissa tältä:
+
+![sivuthtml](https://github.com/user-attachments/assets/3dbbd079-1c2e-40fc-ade4-33a66c977845)
+
+
+
+
 
 
 
