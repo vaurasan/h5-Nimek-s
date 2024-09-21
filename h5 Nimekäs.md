@@ -155,7 +155,7 @@ Piti vielä muokata linkit näyttämään tältä, jotta ne toimivat:
 
 Jostain syystä windowsin chromella ei nyt toimi tuo sivu, mutta kännykällä pääsin ja kaikki linkit toimivat.
 
-*klo 19:18, ei tullut hienoja ja aikaa kului, paljon tässäkin oppi asioita, parempi tehdä virheet tässä vaiheessa*
+*klo 19:18, ei tullut hienoja ja aikaa kului, paljon tässäkin oppi asioita, parempi tehdä virheet tässä vaiheessa homma jatkuu aikaisintaan seuraavana iltana*
 
 
 
