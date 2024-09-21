@@ -85,7 +85,12 @@ Tässä vaiheessa kirjasin publicsites/santerivauramo.com:iin:
 
 ![publicsites](https://github.com/user-attachments/assets/85a46afe-abb1-4e35-bade-a9715d4cde12)
 
-~/publicsites/santerivauramo.com$ kansiossa luon index.html tiedoston komennolla ``micro index.html``, lähden rakentamaan aiemman testisivun päälle, lisään vain linkit kahteen muuhun sivuun samassa kansiossa. Katson vielä ohjeita html:n kirjoittamiseen [täältä](https://www.w3schools.com/html/).
+~/publicsites/santerivauramo.com$ kansiossa luon index.html tiedoston komennolla ``micro index.html``, lähden rakentamaan aiemman testisivun päälle, lisään vain linkit kahteen muuhun sivuun samassa kansiossa. Katson vielä ohjeita html:n kirjoittamiseen [täältä](https://www.w3schools.com/html/). Validoin koodin [täällä](https://validator.w3.org/nu/#textarea). Index näyttää tältä:
+
+![indexi](https://github.com/user-attachments/assets/a07ffdc9-e54d-4296-9f1a-4b0cbc7ed0ea)
+
+
+
 
 
 ## Otsikko
@@ -100,6 +105,7 @@ Tässä vaiheessa kirjasin publicsites/santerivauramo.com:iin:
 
 UpCloud. Faq. Luettavissa: https://upcloud.com/resources/tutorials/use-ssh-keys-authentication. Luettu 20.9.2024<br>
 UpCloud. How to regain access to a server that was deployed using SSH keys. Luettavissa: https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys. Luettu 21.9.2024<br>
+Validator. W3Scools. Luettavissa: https://validator.w3.org/nu/#textarea. Luettu 21.9.2024<br>
 W3Schools. HTML. Luettavissa: https://www.w3schools.com/html/. Luettu 21.9.2024
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
