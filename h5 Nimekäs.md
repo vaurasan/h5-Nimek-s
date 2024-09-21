@@ -149,6 +149,9 @@ Loin kansioon siis ``index.html``, ``eka.html``, ja ``toka.html``-tiedostot. Sis
 
 ![sivuthtml](https://github.com/user-attachments/assets/3dbbd079-1c2e-40fc-ade4-33a66c977845)
 
+Piti vielä muokata linkit näyttämään tältä, jotta ne toimivat:
+
+![linkit](https://github.com/user-attachments/assets/babc40c2-a32d-47b1-b285-3560772bce08)
 
 
 
