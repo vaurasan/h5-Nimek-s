@@ -115,7 +115,20 @@ Järjen mukaan tämän pitäisi toimia, kun teen samaan kansioon eka.html ja tok
 
 Pistää silmään rivi jossa lukee ``AH00526: Syntax error on line 3 of /etc/apache2/sites-enabled/santerivauramo.com.conf:``, täytynee mennä muokkaamaan ``/etc/apache2/sites-enabled/santerivauramo.com.conf``
 
-Kävin poistamassa tuon koko tiedoston, muuten en saanut apachelle tehtyä mitään, nyt pystyy taas potkimaan demonia.
+Kävin poistamassa tuon koko tiedoston, muuten en saanut apachelle tehtyä mitään, nyt pystyy taas potkimaan demonia. Loin tiedoston uudestaan seuraavilla tiedoilla:
+
+![imnanovirtual](https://github.com/user-attachments/assets/f1570e08-d655-4d52-a901-dc32dcd152dc)
+
+santerivauramo.com sanoo: "404 Not Found". Kello on nyt 15:15, pidän pienen tauon ja katson samalla videon: https://www.youtube.com/watch?v=1CDxpAzvLKY.
+
+*klo 15:45* jatkan vielä hetken ennen ruokailua ja lenkkiä.
+
+https://httpd.apache.org/docs/2.4/vhosts/ Täältä löytyi komento ``apachectl -S``, joka näyttää seuraavaa
+
+![imagerrorias](https://github.com/user-attachments/assets/7c431cd3-d5fa-4e4e-8750-42584a4d3c9b)
+
+*klo 16:05, tauko*
+
 
 
 ## Otsikko
