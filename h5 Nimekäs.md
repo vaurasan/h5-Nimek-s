@@ -58,6 +58,13 @@ Nyt laitan palvelimen tulille ja samat alkusäädöt, kuin aiemmassa läksyssä.
 
 ![failedConnect](https://github.com/user-attachments/assets/06fa17b0-9fca-4a03-9404-7a9d99c54899)
 
+*21.9.2024*
+
+Jätin homman sikseen, kun olin jo väsynyt päivästä. Tänään aamulla kävin säätämässä uudelleen. Menin ensin UpCloudin sivuilta "console" näkymään, kun olin onnistunut vaihtamaan SSH-avaimen lennosta ja lukitsemaan itseni ulos. UpCloudilla on onneksi tämmöinen palvelu, josta pääset selaimella palvelimelle sisään käyttämällä salasanaa, jolla kirjaudutaan UpCloudin nettisivuille.
+
+![Consolee](https://github.com/user-attachments/assets/83904dea-aa39-4698-8c38-839ad50d931d)
+
+Hyödynsin tätä [ohjetta](https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys)
 
 
 ## a) Kotisivu
@@ -79,6 +86,7 @@ Nyt laitan palvelimen tulille ja samat alkusäädöt, kuin aiemmassa läksyssä.
 ## Lähteet
 
 UpCloud. Faq. Luettavissa: https://upcloud.com/resources/tutorials/use-ssh-keys-authentication. Luettu 20.9.2024<br>
+UpCloud. How to regain access to a server that was deployed using SSH keys. Luettavissa: https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys. Luettu 21.9.2024<br>
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html<br>
 Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com<br><br>
