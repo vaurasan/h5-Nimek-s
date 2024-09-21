@@ -66,7 +66,7 @@ Jätin homman sikseen, kun olin jo väsynyt päivästä. Tänään aamulla kävi
 
 Hyödynsin tätä [ohjetta](https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys)
 
-Consolen avulla pystyin muokkaamaan palvelimen SSH-kansion tiedostoja. ``sudo nano /etc/ssh/sshd_config``, sieltä muutin ensin *.conf tiedoston pois käytöstä, laitoin salasanakirjautumisen päälle, sekä sallin SSH-avaimella kirjautumisen, joka oli mystisesti mennyt pois päältä. Tämän jälkeen lähetin palvelimelle vielä oman SSH-public-avaimen komennolla ``ssh-copy-id santeri@94.237.35.220``, nyt saatoin kirjautua palvelimelle ilman salasanaa. 
+Consolen avulla pystyin muokkaamaan palvelimen SSH-kansion tiedostoja. ``sudo nano /etc/ssh/sshd_config``, sieltä muutin ensin *.conf tiedoston pois käytöstä, laitoin salasanakirjautumisen päälle, sekä sallin SSH-avaimella kirjautumisen, joka oli mystisesti mennyt pois päältä. Tämän jälkeen lähetin palvelimelle vielä oman SSH-public-avaimen komennolla ``ssh-copy-id santeri@94.237.35.220``, kävin muuttamassa *.conf tiedoston takaisin sallituksi, nyt saatoin kirjautua palvelimelle ilman salasanaa. 
 
 Tämän jälkeen tein perus asennukset ``sudo apt-get update``, ``sudo apt-get install ufw micro apache2``, tein palomuuriin reiät ``sudo ufw allow 22/tcp``, ``sudo ufw allot 80/tcp``, laitoin palomuurin päälle ``sudo ufw enable``
 
