@@ -20,7 +20,7 @@ Käyttöjärjestelmä: Windows 11 Pro 23H2
 
 *20.9.2024 klo 16:55*
 
-#### Edellisenä läksynä vuokrasin DigitalOceanista palvelimen, joka sijaitsee Saksassa. Nyt kun viime oppitunnilla käytiin läpi SSH-avaimella kirjautuminen, vuokraan palvelimem UpCloudista, koska haluan kotimaisen palvelimen.
+#### Edellisenä läksynä vuokrasin DigitalOceanista palvelimen, joka sijaitsee Saksassa. Nyt kun viime oppitunnilla käytiin läpi SSH-avaimella kirjautuminen, vuokraan palvelimen UpCloudista, koska haluan kotimaisen palvelimen.
 
 Aluksi käyn DigitalOceanissa poistamassa aiemmin vuokraamani "Dropletin"
 
@@ -181,7 +181,17 @@ Kopioin myös .conf tiedoston ja muutan sieltä tietoja:
 
 Nyt kun menen https://linuxkurssi-a.santerivauramo.com/ sivulle, tulee sama index.html sivu, joka aiemmin, eli ei toimi näin. Käyn muuttamassa tuon /linuxkurssi-a kansiossa olevan html-tiedoston joksikin muuksi, kuin index.html. ``mv index.html testi-a.html``, nyt kokeilen uudestaan nettisivua. Ei toimi vieläkään, täytyy odotella ja samalla lukea CNAME-tietueesta lisää ja palata asiaan. https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-to-create-a-cname-record-for-your-domain/
 
-*klo 18:03*
+*klo 18:03 tauko* *jatkuu klo 18:15*
+
+Kysyin välissä ChatGPT:ltä neuvoa, miksi tuo ohjaa vieläkin tuolle pääsivulle. Muutin ``sites-available``:sta .conf tiedostoon tiedot niin, että tuo /linuxkurssi-a kansio on ``/var/www/santerivauramo.com/public_html/linuxkurssi-a``, eli kirjaimellisesti tuon pääsivun alla.
+
+![apaasivunalla](https://github.com/user-attachments/assets/64c0f663-3d00-4a0d-95bf-91bc5e907e47)
+
+Toki vielä täytyy siirtää tuo kansio tuonne oikeaan paikkaan.
+
+![kansioOikeaan](https://github.com/user-attachments/assets/e1a20a3e-0d5c-496a-845f-6f2981519cda)
+
+
 
 
 
