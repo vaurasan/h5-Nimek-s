@@ -203,7 +203,7 @@ Luon .conf tiedoston näillä tiedoilla:
 
 ![cnameconf](https://github.com/user-attachments/assets/31bf8c61-b595-473f-8d76-2d11107a76fe)
 
-*tauko klo 18:45*
+*tauko klo 18:45* Jätän nettisivut tekeytymään, työpäivän jälkeen ei jaksa tämän enempää vaivata päätä, huomiseen.
 
 
 
