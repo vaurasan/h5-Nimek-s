@@ -179,7 +179,7 @@ Kopioin myös .conf tiedoston ja muutan sieltä tietoja:
 
 ![tiedotarecord](https://github.com/user-attachments/assets/f05fde87-cc26-44be-a4c9-35c017524601)
 
-Nyt kun menen https://linuxkurssi-a.santerivauramo.com/ sivulle, tulee sama index.html sivu, joka aiemmin, eli ei toimi näin. Käyn muuttamassa tuon /linuxkurssi-a kansiossa olevan html-tiedoston joksikin muuksi, kuin index.html. ``mv index.html testi-a.html``, nyt kokeilen uudestaan nettisivua. Ei toimi vieläkään, täytyy odotella ja samalla lukea CNAME-tietueesta lisää ja palata asiaan.
+Nyt kun menen https://linuxkurssi-a.santerivauramo.com/ sivulle, tulee sama index.html sivu, joka aiemmin, eli ei toimi näin. Käyn muuttamassa tuon /linuxkurssi-a kansiossa olevan html-tiedoston joksikin muuksi, kuin index.html. ``mv index.html testi-a.html``, nyt kokeilen uudestaan nettisivua. Ei toimi vieläkään, täytyy odotella ja samalla lukea CNAME-tietueesta lisää ja palata asiaan. https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-to-create-a-cname-record-for-your-domain/
 
 *klo 18:03*
 
@@ -191,7 +191,8 @@ Nyt kun menen https://linuxkurssi-a.santerivauramo.com/ sivulle, tulee sama inde
 ## Lähteet
 
 Nair, N. 2024. How to setup Apache Web Server to host a website in Linux. Luettavissa: https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/. Luettu 21.9.2024<br>
-Stackoverflow. Keskustelu. Luettavissa: https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied. Luettu 21.9.2024
+Namecheap. Luettavissa: https://www.namecheap.com/<br>
+Stackoverflow. Keskustelu. Luettavissa: https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied. Luettu 21.9.2024<br>
 UpCloud. Faq. Luettavissa: https://upcloud.com/resources/tutorials/use-ssh-keys-authentication. Luettu 20.9.2024<br>
 UpCloud. How to regain access to a server that was deployed using SSH keys. Luettavissa: https://upcloud.com/resources/tutorials/regaining-access-to-a-server-that-was-deployed-using-ssh-keys. Luettu 21.9.2024<br>
 Validator. W3Scools. Luettavissa: https://validator.w3.org/nu/#textarea. Luettu 21.9.2024<br>
