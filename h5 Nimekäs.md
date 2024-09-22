@@ -197,9 +197,13 @@ Ja nyt toki täytyy vielä siirtää linuxkurssi-a kansion sisällä olevasta /p
 
 Lähden liikkeelle tämmöisellä nimellä namecheapissa.
 
-![cnamecheap](https://github.com/user-attachments/assets/e6bab392-d56f-4c41-b2a7-0e67f088b00a)
+![cnamecheap](https://github.com/user-attachments/assets/e667446b-51e2-4fa6-844d-0342f600a02f)
 
+Luon .conf tiedoston näillä tiedoilla:
 
+![cnameconf](https://github.com/user-attachments/assets/31bf8c61-b595-473f-8d76-2d11107a76fe)
+
+*tauko klo 18:45*
 
 
 
