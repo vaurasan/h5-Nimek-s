@@ -191,6 +191,14 @@ Toki vielä täytyy siirtää tuo kansio tuonne oikeaan paikkaan.
 
 ![kansioOikeaan](https://github.com/user-attachments/assets/e1a20a3e-0d5c-496a-845f-6f2981519cda)
 
+Ja nyt toki täytyy vielä siirtää linuxkurssi-a kansion sisällä olevasta /public_html kansiosta tuo testa-a.html tiedosto oikeaan paikkaan. Kävin vielä lisäämässä .conf tiedostoon ``DocumentRoot`` kohtaan tuon testi-a.html loppuun. Siltikään ei vielä toimi, nyt CNAME:n kimppuun.
+
+![siirtelyjapoisto](https://github.com/user-attachments/assets/ab1e30cc-4365-4c0f-887b-4643a941ca60)
+
+Lähden liikkeelle tämmöisellä nimellä namecheapissa.
+
+![cnamecheap](https://github.com/user-attachments/assets/e6bab392-d56f-4c41-b2a7-0e67f088b00a)
+
 
 
 
