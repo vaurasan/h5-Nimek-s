@@ -163,8 +163,25 @@ Jostain syystä windowsin chromella ei nyt toimi tuo sivu, mutta kännykällä p
 
 #### Tehtävä: Tee kaksi uutta alidomainia, jotka osoittava omaan koneeseesi. Esimerkiksi palvelu on example.com -> linuxkurssi.example.com. Tee toinen alidomain A-tietueella ja toinen CNAME-tietueella. Alidomainit ovat tyypillisesti ilmaisia, kun sinulla on päädomain (example.com).
 
+Aloitan lukemalla ensin A-tietueesta ja CNAME-tietueesta, ennen kuin laitan kellon juoksemaan. Ensin googlasin mikä on tietue englanniksi, koska sitä ei ole tullut aiemmin vastaan, vastaus: record. Namecheapin domainpalvelun omaavana, hain tietoa hakusanalla "A-record namecheap" ja löysin varsin hyödyllisen ohjesivun: https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain/.
 
+*22.9.2024 klo 17:44*
 
+Kirjaudun Namecheap palveluun ja menen "Domain List", ja sieltä "Manage", ja "Advanced DNS", sama mistä lisättiin nimipalveluun palvelimen IP-osoite alunperin. En ole ihan varma tämän toiminnasta, mikä voisi mennä pieleen, kokeilen tällaisella nimellä:
+
+![arecord](https://github.com/user-attachments/assets/909b9c38-b6c1-4f09-be23-33c52359e1a3)
+
+Menin palvelimelleni ja tein ``/var/www/linuxkurssi-a/public_html/`` kansion ja sinne ``index.html`` tiedoston.
+
+![linuxatietue](https://github.com/user-attachments/assets/099b6dac-3b44-4ddc-89a0-967553e15171)
+
+Kopioin myös .conf tiedoston ja muutan sieltä tietoja:
+
+![tiedotarecord](https://github.com/user-attachments/assets/f05fde87-cc26-44be-a4c9-35c017524601)
+
+Nyt kun menen https://linuxkurssi-a.santerivauramo.com/ sivulle, tulee sama index.html sivu, joka aiemmin, eli ei toimi näin. Käyn muuttamassa tuon /linuxkurssi-a kansiossa olevan html-tiedoston joksikin muuksi, kuin index.html. ``mv index.html testi-a.html``, nyt kokeilen uudestaan nettisivua. Ei toimi vieläkään, täytyy odotella ja samalla lukea CNAME-tietueesta lisää ja palata asiaan.
+
+*klo 18:03*
 
 
 
