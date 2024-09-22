@@ -16,7 +16,7 @@
 
 Käyttöjärjestelmä: Windows 11 Pro 23H2
 
-## aa) Tämä ei kuulu tehtävänantoon 
+## aa-) Tämä ei kuulu tehtävänantoon 
 
 *20.9.2024 klo 16:55*
 
