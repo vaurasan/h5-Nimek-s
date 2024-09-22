@@ -77,6 +77,8 @@ Tämän jälkeen tein perus asennukset ``sudo apt-get update``, ``sudo apt-get i
 
 *21.9.2024 klo 13:34*
 
+Toisella kurssilla tehdään parhaillaan kotisivuja, jotka myöhemmin lisään tänne. Nyt kuitenkin teen hyvin yksinkertaiset html-testisivut.
+
 Lähden muistelemaan aiemmista tehtävistä, ajoin seuraavat komennot, samalla laitoin micro-editorin oletukseksi
 
 ![histapache](https://github.com/user-attachments/assets/cd2d0c4e-90cf-4b08-8f07-719b58964684)
@@ -155,10 +157,7 @@ Piti vielä muokata linkit näyttämään tältä, jotta ne toimivat:
 
 Jostain syystä windowsin chromella ei nyt toimi tuo sivu, mutta kännykällä pääsin ja kaikki linkit toimivat.
 
-*klo 19:18, ei tullut hienoja ja aikaa kului, paljon tässäkin oppi asioita, parempi tehdä virheet tässä vaiheessa homma jatkuu aikaisintaan seuraavana iltana*
-
-
-
+*klo 19:18* ei tullut hienoja ja aikaa kului, paljon tässäkin oppi asioita, parempi tehdä virheet tässä vaiheessa, homma jatkuu aikaisintaan seuraavana iltana
 
 ## Otsikko
 
