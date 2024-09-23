@@ -252,8 +252,18 @@ https://upcloud.com/resources/tutorials/use-ssh-keys-authentication UpCloudin oh
 #### - Jonkin pikkuyrityksen, kerhon tai yksittäisen henkilön weppisivut. (Ei kuitenkaan kurssikaverin tällä viikolla vuokrattua nimeä).
 #### - Jonkin suuren ja kaikkien tunteman palvelun tiedot.
 
+En saanut "dig" komennolla tehtyä mitään, enkä saanut sitä myöskään asennettua ``sudo apt-get install dig``. Yritin vielä etsiä ``apt-cache search dig``, mutta ei löytynyt äkkiseltään mitään tehtävänantoon liittyvää ohjelmaa. Ei hätiä, https://www.cyberciti.biz/faq/debian-9-dig-command-not-found-how-to-install-dig-on-debian/ auttoi asentamisessa ja käytössä, ``sudo apt-get install dnsutils`` paketti sisältää "dig":n, sekä "host":n. Sivulta pääsee myös katsomaan [dig](https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/):n ja [host](https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/):n käytöstä.
+
+![dighostsanteriv](https://github.com/user-attachments/assets/1037d8c3-8557-4d33-9101-95df8c29b7f2)
+
+
+
+
 ## Lähteet
 
+Gite, V. 2024. How to install dig on Debian Linux 12/11/10. Luettavissa: https://www.cyberciti.biz/faq/debian-9-dig-command-not-found-how-to-install-dig-on-debian/. Luettu 23.9.2024<br>
+Gite, V. 2024. Luettavissa: https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/. Luettu 23.9.2024
+Gite, V. 2024. Linux and Unix host Command Examples. Luettavissa: https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/. Luettu 23.9.2024<br>
 Nair, N. 2024. How to setup Apache Web Server to host a website in Linux. Luettavissa: https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/. Luettu 21.9.2024<br>
 Namecheap. Luettavissa: https://www.namecheap.com/<br>
 Stackoverflow. Keskustelu. Luettavissa: https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied. Luettu 21.9.2024<br>
