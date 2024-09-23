@@ -205,6 +205,18 @@ Luon .conf tiedoston näillä tiedoilla:
 
 *tauko klo 18:45* Jätän nettisivut tekeytymään, työpäivän jälkeen ei jaksa tämän enempää vaivata päätä, huomiseen.
 
+``systemctl status apache2.service`` kertoo seuraavaa:
+
+![doesnotexist](https://github.com/user-attachments/assets/d89ce23a-f515-480e-926d-2fe51464bb85)
+
+Eli nuo apache ei löydä noita html-tiedostoja. Kävin muokkaamassa .conf tiedostoista DocumentRoot kohdat muotoon ``/var/www/santerivauramo.com/public_html_linuxkurssi-a/``. Nyt pääsen katsomaan a-tietueella luotua sivua internetistä osoittella: http://linuxkurssi-a.santerivauramo.com/testi-a.html, jostain syystä pelkkä http://linuxkurssi-a.santerivauramo.com/ näyttää sivun, josta kyllä pääsee linkin kautta menemään tuolle oikealle sivulle.
+
+![atietueouto](https://github.com/user-attachments/assets/1e6a9ffb-3f8a-4a37-8159-8f3c20b3f823)
+
+
+![atietuetoimii](https://github.com/user-attachments/assets/4d3f11fd-d889-4f67-92f3-7ae9517c5074)
+
+
 
 
 ## Otsikko
