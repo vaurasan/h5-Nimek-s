@@ -254,6 +254,8 @@ https://upcloud.com/resources/tutorials/use-ssh-keys-authentication UpCloudin oh
 
 En saanut "dig" komennolla tehtyä mitään, enkä saanut sitä myöskään asennettua ``sudo apt-get install dig``. Yritin vielä etsiä ``apt-cache search dig``, mutta ei löytynyt äkkiseltään mitään tehtävänantoon liittyvää ohjelmaa. Ei hätiä, https://www.cyberciti.biz/faq/debian-9-dig-command-not-found-how-to-install-dig-on-debian/ auttoi asentamisessa ja käytössä, ``sudo apt-get install dnsutils`` paketti sisältää "dig":n, sekä "host":n. Sivulta pääsee myös katsomaan [dig](https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/):n ja [host](https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/):n käytöstä.
 
+Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania.
+
 ![dighostsanteriv](https://github.com/user-attachments/assets/1037d8c3-8557-4d33-9101-95df8c29b7f2)
 
 
