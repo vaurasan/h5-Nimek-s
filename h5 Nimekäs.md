@@ -107,7 +107,7 @@ Kävin luomassa public_html kansion ja santerivauramo.com.conf tekstitiedoston
 
 ![comconf](https://github.com/user-attachments/assets/0fd3683d-7b1f-40e0-845d-61eda5584140)
 
-Eipä ollut tarkoitus luoda public_html kansiota, vaan tekstitiedosto. ``rm -r public_html/``, eli poistan kansion ja luon public_html tekstitiedoston ``micro public_html``, sinne laitan seuraavaa: 
+Eipä ollut tarkoitus luoda public_html kansiota, vaan tekstitiedosto. ``rm -r public_html/``, eli poistan kansion ja luon public_html tekstitiedoston ``micro public_html``, sinne laitan seuraavaa: (Myöhemmin huomasin, että juuri se kansio piti luoda, en tiedä mistä tämäkin ajatus tuli)
 
 ![htmlekatoka](https://github.com/user-attachments/assets/eb4efdbf-aeaf-4147-aeb5-53cdd887f968)
 
