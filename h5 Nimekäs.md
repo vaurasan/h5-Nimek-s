@@ -222,6 +222,8 @@ Eli apache ei löydä noita html-tiedostoja. Kävin muokkaamassa .conf tiedostoi
 
 Tyydyn tähän tällä erää, pitänee tunnilla kysyä lisää tästä. Nyt vielä murhetta aiheuttaa tuo CNAME-tietueen toiminta: "Sivustoon ei saada yhteyttä". Aiemmin linkittämäni namecheapin ohje kertoo, että ei voi olla samaa "Host":a CNAME-tietueen kanssa, joten joudun muuttamaan a-tietueen, jossa on "www" Host, muuksi. Nyt täytyy odotella hetki.
 
+Jostakin mieleen tuli tuo ``chmod 777``, jonka aiemmin asetin, luin lisää siitä täältä: https://linuxhandbook.com/chmod-command/. Kävi ilmi, että tuo 777 antaa kaikille kaikki oikeudet tuohon kansioon, jota en halua. Muutin sen takaisin ``sudo chmod -R 755 /var/www/``, ainakin toistaiseksi pystyn muokata ilman pääkäyttäjänoikeuksia kansion tiedostoja.
+
 *klo 9:17, tauko*
  
 
