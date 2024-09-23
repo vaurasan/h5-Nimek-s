@@ -220,7 +220,9 @@ Eli apache ei löydä noita html-tiedostoja. Kävin muokkaamassa .conf tiedostoi
 
 ![atietuetoimii](https://github.com/user-attachments/assets/4d3f11fd-d889-4f67-92f3-7ae9517c5074)
 
-Tyydyn tähän tällä erää, pitänee tunnilla kysyä lisää tästä. Nyt vielä murhetta aiheuttaa tuo CNAME-tietueen toiminta: "Sivustoon ei saada yhteyttä" 
+Tyydyn tähän tällä erää, pitänee tunnilla kysyä lisää tästä. Nyt vielä murhetta aiheuttaa tuo CNAME-tietueen toiminta: "Sivustoon ei saada yhteyttä". Aiemmin linkittämäni namecheapin ohje kertoo, että ei voi olla samaa "Host":a CNAME-tietueen kanssa, joten joudun muuttamaan a-tietueen, jossa on "www" Host, muuksi. Nyt täytyy odotella hetki.
+
+*klo 9:17, tauko*
  
 
 ## Otsikko
