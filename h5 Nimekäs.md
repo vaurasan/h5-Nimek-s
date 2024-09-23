@@ -257,6 +257,7 @@ En saanut "dig" komennolla tehtyä mitään, enkä saanut sitä myöskään asen
 Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania. Oletuksena "**host**" komennolla voidaan tehdä DNS (Domain Name System) kyselyjä, joko domain-nimellä tai IP-osoitteella. "man host" kertoo myös, että host komennolla voi etsiä myös paljon muitakin asioita käyttäen valinnaisia lisäargumentteja kuten: "-l". CNAME haut pitää tehdä "-t" lisäyksellä.
 
 **Dig**-komennon oletuskysely on "A", eli osoite (Address). Domain-nimellä haettaessa siis oletuksena dig näyttää IP-osoitteen. Kuten "host", myös "dig":llä tehdään DNS kyselyjä. Monet käyttävät "dig":ä DNS ongelmien selvittämiseen.
+**Oletuksena "dig" näyttää kaikki kentät**.
 
 #### Oma domain vs namecheap.com
 
