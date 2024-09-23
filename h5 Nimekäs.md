@@ -205,6 +205,10 @@ Luon .conf tiedoston näillä tiedoilla:
 
 *tauko klo 18:45* Jätän nettisivut tekeytymään, työpäivän jälkeen ei jaksa tämän enempää vaivata päätä, huomiseen.
 
+*23.9.2024 klo 8:40*
+
+Aloin lukemaan täältä lisää aiheesta https://httpd.apache.org/docs/2.4/vhosts/examples.html
+
 ``systemctl status apache2.service`` kertoo seuraavaa:
 
 ![doesnotexist](https://github.com/user-attachments/assets/d89ce23a-f515-480e-926d-2fe51464bb85)
