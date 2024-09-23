@@ -265,7 +265,7 @@ Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloks
 
 ![namecheaphost](https://github.com/user-attachments/assets/28999f04-fe36-43e0-bf0b-aa4914d5823b)
 
-- Host-komento kertoo domain-nimeä vastaavan IP-osoitteen, sekä muita tietoja. Oli pakko kysyä GhatGPT:ltä tuosta "mail is handled by...", koska en löytänyt muista lähteistä mitään järkevää. "Puppusanageneraattorin" mukaan "mail is handled by":n jälkevä numero kertoo millä prioriteetilla tuohon osoitteeseen lähetetyt sähköpostit ohjautuvat mihinkin osoitteisiin, mitä pienempi luku, sitä korkeamppi prioriteetti. Minun palvelin ja namecheap käyttää eri MX-tietueita.
+- Host-komento kertoo domain-nimeä vastaavan IP-osoitteen, sekä muita tietoja. Oli pakko kysyä GhatGPT:ltä tuosta "mail is handled by...", koska en löytänyt muista lähteistä mitään järkevää. "Puppusanageneraattorin" mukaan "mail is handled by":n jälkeen oleva numero kertoo millä prioriteetilla tuohon osoitteeseen lähetetyt sähköpostit ohjautuvat mihinkin osoitteisiin, mitä pienempi luku, sitä korkeamppi prioriteetti. Minun palvelin ja namecheap käyttää eri MX-tietueita.
 
 ![omaiphost](https://github.com/user-attachments/assets/7202357b-76be-4f2d-b658-af82c0007d2f)
 
@@ -280,8 +280,7 @@ IP-osoitteella haettaessa molemmissa näkyy ".in-addr.arpa", eli "Advanced Resea
 ![digsanteriv](https://github.com/user-attachments/assets/0710332f-fb83-4ae4-a451-d5c5826023f4)
 
 Tietoa tulee enemmän, kuin odotin. Alussa kerrotaan dig versiosta ja käyttöjärjestelmästä, sekä mitä haettiin. 
-Pseudosectionissa "udp" viittaa käytössä olleeseen protocollaan, joka voi muuttua myös "tcp":ksi tarvittaessa. "512" on bitteinä udp viestin koko.
-
+Pseudosectionissa "udp" viittaa käytössä olleeseen protocollaan, joka voi muuttua myös "tcp":ksi tarvittaessa. "512" on bitteinä udp viestin koko. "Answer section" kertoo varsinaisesti varta itse tiedoja mitä haluttiin löytää, näitä pystyy rajaamaan halutessaan erinäisillä lisäkomennoilla.
 
 ``dig +short santerivauramo.com`` kertoo ainoastaan IP-osoitteen.
 
@@ -299,11 +298,27 @@ Namecheapilla nimipalveluja on huomattavasti enemmän:
 
 #### - Jonkin pikkuyrityksen, kerhon tai yksittäisen henkilön weppisivut
 
-![terohost](https://github.com/user-attachments/assets/45d990f8-0de3-4973-87af-23d981186907)
+![terohost](https://github.com/user-attachments/assets/c81b71be-bec6-4f1d-a7c2-fbf404879f2b)
 
-``host terokarvinen.com`` näyttää
+``host terokarvinen.com`` näyttää IP-osoitteeksi 139.162.131.217, sekä että sähköpostia hallitsee mx.runbox.com.
 
+![terodig](https://github.com/user-attachments/assets/e967e411-95d0-418b-a95d-ba180b9eb8e6)
 
+``dig terokarvinen.com`` tiedot näyttää suhteellisen saman kaltaisilta, kuin aiemmissa kyselyissä. Välimuistissa tietoa säilytetään 10005 sekuntia, mikä on varmasti hyvä jos haluaa minimoida palvelimen kuormitusta.
+
+#### - Jonkin suuren ja kaikkien tunteman palvelun tiedot
+
+![hostyoutube](https://github.com/user-attachments/assets/2499a087-687f-4250-a8d2-745a439963e4)
+
+Ei yllätä, että youtube.com:n mail is handled by google, samaa palvelua kuitenkin molemmat. Domain name pointer näyttää uniikilta verrattuna aiempiin.
+
+![digyoutube](https://github.com/user-attachments/assets/1f24b080-9dbc-461a-b28d-6628b3835d29)
+
+295 sekunnin välimuisti on huomattavan pieni, eli palvelin joutuu kovemmalle rasitukselle, mutta tiedot päivittyvät nopeasti.
+
+---
+
+Tässä meni niin monta tuntia kaiken selvittelyn äärellä, että jätän bonustehtävän välistä. Kaikkineen aikamoinen savotta oli, mutta sitäkin opettavaisempi kokemus.
 
 ## Lähteet
 
