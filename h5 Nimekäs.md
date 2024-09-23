@@ -254,7 +254,7 @@ https://upcloud.com/resources/tutorials/use-ssh-keys-authentication UpCloudin oh
 
 En saanut "dig" komennolla tehtyä mitään, enkä saanut sitä myöskään asennettua ``sudo apt-get install dig``. Yritin vielä etsiä ``apt-cache search dig``, mutta ei löytynyt äkkiseltään mitään tehtävänantoon liittyvää ohjelmaa. Ei hätiä, https://www.cyberciti.biz/faq/debian-9-dig-command-not-found-how-to-install-dig-on-debian/ auttoi asentamisessa ja käytössä, ``sudo apt-get install dnsutils`` paketti sisältää "dig":n, sekä "host":n. Sivulta pääsee myös katsomaan [dig](https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/):n ja [host](https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/):n käytöstä.
 
-Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania. "Host" komennolla voidaan tehdä DNS (Domain Name System) kyselyjä, joko domain-nimellä tai IP-osoitteella.
+Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania. Oletuksena "host" komennolla voidaan tehdä DNS (Domain Name System) kyselyjä, joko domain-nimellä tai IP-osoitteella. "man host" kertoo myös, että host komennolla voi etsiä myös paljon muitakin asioita käyttäen valinnaisia välimerkkejä kuten: "-l"
 
 #### Oma domain vs namecheap.com
 
@@ -262,13 +262,15 @@ Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloks
 
 ![namecheaphost](https://github.com/user-attachments/assets/28999f04-fe36-43e0-bf0b-aa4914d5823b)
 
-Host-komento kertoo domain-nimeä vastaavan IP-osoitteen. 
+Host-komento kertoo domain-nimeä vastaavan IP-osoitteen, sekä 
 
 ![omaiphost](https://github.com/user-attachments/assets/7202357b-76be-4f2d-b658-af82c0007d2f)
 
 ![nameciphost](https://github.com/user-attachments/assets/8e5ba3f4-89b2-42f9-bc46-8daa6356031d)
 
+*Tässä vaiheessa muuten vaihdoin palvelimen hostnamen siihen, mikä sen alunperinkin piti olla, ``sudo hostnamectl set-hostname debiathan``, jonka jälkeen ``sudo reboot``, ohjeet löytyy täältä: https://linuxgenie.net/change-hostname-debian-12/#post-10630-_rku68glrm7se.*
 
+IP-osoitteella haettaessa
 
 
 
