@@ -70,7 +70,7 @@ Consolen avulla pystyin muokkaamaan palvelimen SSH-kansion tiedostoja. ``sudo na
 
 ![ilmansala](https://github.com/user-attachments/assets/972a582f-90d6-4017-ae72-68912c3da92b)
 
-Tämän jälkeen tein perus asennukset ``sudo apt-get update``, ``sudo apt-get install ufw micro apache2``, tein palomuuriin reiät ``sudo ufw allow 22/tcp``, ``sudo ufw allot 80/tcp``, laitoin palomuurin päälle ``sudo ufw enable``
+Tämän jälkeen tein perus asennukset ``sudo apt-get update``, ``sudo apt-get install ufw micro apache2``, tein palomuuriin reiät ``sudo ufw allow 22/tcp``, ``sudo ufw allow 80/tcp``, laitoin palomuurin päälle ``sudo ufw enable``
 
 ## a) Kotisivu
 #### Tehtävä: Tee vähintään kolmen erillisen weppisivun kotisivu ja kopioi se näkymään palvelimellesi. Jos sinulla on oikea palvelin Internetissä, kannattaa käyttää sitä. Käytä name based virtual hosting tekniikkaa. Sivujen muokkaamisen pitää onnistua ilman pääkäyttäjän oikeuksia, niiden kopioiminen pääkäyttäjänä testisivun paikalle ei käy. Kotisivujen ei tarvitse olla hienoja, mutta niiden tulee olla validia HTML:ää ja linkittää toisiinsa.
