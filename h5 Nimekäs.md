@@ -259,7 +259,7 @@ Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloks
 **Dig**-komennon oletuskysely on "A", eli osoite (Address). Domain-nimellä haettaessa siis oletuksena dig näyttää IP-osoitteen. Kuten "host", myös "dig":llä tehdään DNS kyselyjä. Monet käyttävät "dig":ä DNS ongelmien selvittämiseen.
 **Oletuksena "dig" näyttää kaikki kentät**.
 
-#### Oma domain vs namecheap.com
+#### - Oma domain vs namecheap.com
 
 ![omadomainhost](https://github.com/user-attachments/assets/e58d08eb-a8c5-4431-9ab5-9d85278d6001)
 
@@ -279,7 +279,11 @@ IP-osoitteella haettaessa molemmissa näkyy ".in-addr.arpa", eli "Advanced Resea
 
 ![digsanteriv](https://github.com/user-attachments/assets/0710332f-fb83-4ae4-a451-d5c5826023f4)
 
-Tietoa tulee enemmän, kuin odotin. Alussa kerrotaan dig versiosta ja käyttöjärjestelmästä, sekä mitä haettiin. ``dig +short santerivauramo.com`` kertoo ainoastaan IP-osoitteen.
+Tietoa tulee enemmän, kuin odotin. Alussa kerrotaan dig versiosta ja käyttöjärjestelmästä, sekä mitä haettiin. 
+Pseudosectionissa "udp" viittaa käytössä olleeseen protocollaan, joka voi muuttua myös "tcp":ksi tarvittaessa. "512" on bitteinä udp viestin koko.
+
+
+``dig +short santerivauramo.com`` kertoo ainoastaan IP-osoitteen.
 
 ![digipvain](https://github.com/user-attachments/assets/64eb02e5-9173-431c-8ff2-95aee4e55d88)
 
@@ -291,8 +295,13 @@ Namecheapilla nimipalveluja on huomattavasti enemmän:
 
 ![namecheapns](https://github.com/user-attachments/assets/dee834c8-2188-4572-9a9a-b99543045998)
 
+3600 numero ennen IN:ä kertoo ChatGPT:n mukaan TTL arvon, tässä tapauksessa DNS-tietue voidaan varastoida 3600 sekunniksi, eli yhden tunnin ajaksi. IN tarkoittaa internetiä. TTL arvo auttaa nopeuttamaan verkon toimintaa, mutta suuri arvo taas voi johtaa vanhan tiedon näkymiseen käyttäjälle.
 
+#### - Jonkin pikkuyrityksen, kerhon tai yksittäisen henkilön weppisivut
 
+![terohost](https://github.com/user-attachments/assets/45d990f8-0de3-4973-87af-23d981186907)
+
+``host terokarvinen.com`` näyttää
 
 
 
