@@ -241,6 +241,8 @@ Tämän tein jo vahingossa kohdassa aa). Kerrataanpa kuitenkin, mitä tuli tehty
 
 Aluksi poistutaan palvelimelta ``exit``, ``ssh-keygen`` luo SSH-avainparin, ``ssh-copy-id santeri@94.237.35.220`` lähettää palvelimelle julkisen avaimen. UpCloudin palvelinta luotaessa oli jo syötettävä julkinen avain.
 
+https://upcloud.com/resources/tutorials/use-ssh-keys-authentication UpCloudin ohje. Saatoin aiemmin mennä joissain kohdissa ansaan ja lukitsin itseni pois, komento ``chmod 700 ~/.ssh`` root käyttäjänä saattoi estää julkisen avaimen lähettämisen palvelimeen. Nyt myöhemmin kuitenkin sen tehtyä, pääsen vielä kirjautumaan normaalisti ilman salasanaa.
+
 *valmis klo 9:45*
 
 ## d) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla
