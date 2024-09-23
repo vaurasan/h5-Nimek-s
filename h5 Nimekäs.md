@@ -225,7 +225,13 @@ Tyydyn tähän tällä erää, pitänee tunnilla kysyä lisää tästä. Nyt vie
 Jostakin mieleen tuli tuo ``chmod 777``, jonka aiemmin asetin, luin lisää siitä täältä: https://linuxhandbook.com/chmod-command/. Kävi ilmi, että tuo 777 antaa kaikille kaikki oikeudet tuohon kansioon, jota en halua. Muutin sen takaisin ``sudo chmod -R 755 /var/www/``, ainakin toistaiseksi pystyn muokata ilman pääkäyttäjänoikeuksia kansion tiedostoja.
 
 *klo 9:17, tauko*
- 
+
+ *klo 9:36*
+
+Nyt pääsin sisälle cnametest.santerivauramo.com Chromen incognito-tilassa. Sama asia, kuin a-tietueella, eli ikään kuin kansionäkymä tuolla osoitteella, mutta sieltä pääsee tuohon .html tiedostoon käsiksi. Tyydyn tähän ratkaisuun toistaiseksi myös CNAME:n osalta, tunnilla selvinnee asiasta lisää.
+
+ ![cnamesuccess](https://github.com/user-attachments/assets/3bb8ed2d-be40-4d21-b5c6-e43296b5f7ba)
+
 
 ## Otsikko
 
