@@ -254,9 +254,21 @@ https://upcloud.com/resources/tutorials/use-ssh-keys-authentication UpCloudin oh
 
 En saanut "dig" komennolla tehtyä mitään, enkä saanut sitä myöskään asennettua ``sudo apt-get install dig``. Yritin vielä etsiä ``apt-cache search dig``, mutta ei löytynyt äkkiseltään mitään tehtävänantoon liittyvää ohjelmaa. Ei hätiä, https://www.cyberciti.biz/faq/debian-9-dig-command-not-found-how-to-install-dig-on-debian/ auttoi asentamisessa ja käytössä, ``sudo apt-get install dnsutils`` paketti sisältää "dig":n, sekä "host":n. Sivulta pääsee myös katsomaan [dig](https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/):n ja [host](https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/):n käytöstä.
 
-Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania.
+Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania. "Host" komennolla voidaan tehdä DNS kyselyjä, joko domain-nimellä tai IP-osoitteella.
 
-![dighostsanteriv](https://github.com/user-attachments/assets/1037d8c3-8557-4d33-9101-95df8c29b7f2)
+#### Oma domain vs namecheap.com
+
+![omadomainhost](https://github.com/user-attachments/assets/e58d08eb-a8c5-4431-9ab5-9d85278d6001)
+
+![namecheaphost](https://github.com/user-attachments/assets/28999f04-fe36-43e0-bf0b-aa4914d5823b)
+
+Host-komento kertoo domain-nimeä vastaavan IP-osoitteen. 
+
+![omaiphost](https://github.com/user-attachments/assets/7202357b-76be-4f2d-b658-af82c0007d2f)
+
+![nameciphost](https://github.com/user-attachments/assets/8e5ba3f4-89b2-42f9-bc46-8daa6356031d)
+
+
 
 
 
