@@ -264,7 +264,7 @@ Dig-komento
 
 ![namecheaphost](https://github.com/user-attachments/assets/28999f04-fe36-43e0-bf0b-aa4914d5823b)
 
-Host-komento kertoo domain-nimeä vastaavan IP-osoitteen, sekä 
+- Host-komento kertoo domain-nimeä vastaavan IP-osoitteen, sekä muita tietoja. Oli pakko kysyä GhatGPT:ltä tuosta "mail is handled by...", koska en löytänyt muista lähteistä mitään järkevää. "Puppusanageneraattorin" mukaan "mail is handled by":n jälkevä numero kertoo millä prioriteetilla tuohon osoitteeseen lähetetyt sähköpostit ohjautuvat mihinkin osoitteisiin, mitä pienempi luku, sitä korkeamppi prioriteetti. Minun palvelin ja namecheap käyttää eri MX-tietueita.
 
 ![omaiphost](https://github.com/user-attachments/assets/7202357b-76be-4f2d-b658-af82c0007d2f)
 
@@ -272,15 +272,18 @@ Host-komento kertoo domain-nimeä vastaavan IP-osoitteen, sekä
 
 *Tässä vaiheessa muuten vaihdoin palvelimen hostnamen siihen, mikä sen alunperinkin piti olla, ``sudo hostnamectl set-hostname debiathan``, jonka jälkeen ``sudo reboot``, ohjeet löytyy täältä: https://linuxgenie.net/change-hostname-debian-12/#post-10630-_rku68glrm7se.*
 
-IP-osoitteella haettaessa oma palvelimeni tiedoissa kerrotaan, että palvelin sijaitsee UpCloudin
+IP-osoitteella haettaessa molemmissa näkyy ".in-addr.arpa", eli "Advanced Research Projects Agency", joka liittyy internetin infrastruktuuriin jo ajalta ennen internetiä. Domain name pointer liittyy PTR-recordiin, tästä en kaikkea ihan täysin ymmärtänyt. Jostain syystä namecheapin pointer näyttää ainoastaan "namecheap.com", kun taas minun debiathanissa lukee IP-osoite ja tiedot UpCloudista, tämä lienee ainoastaan nimiasia.
+
+- Dig 
 
 
 
 
 ## Lähteet
 
+Cloudflare. What is a DNS PTR record?. Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-ptr-record/. Luettu 23.9.2024<br>
 Gite, V. 2024. How to install dig on Debian Linux 12/11/10. Luettavissa: https://www.cyberciti.biz/faq/debian-9-dig-command-not-found-how-to-install-dig-on-debian/. Luettu 23.9.2024<br>
-Gite, V. 2024. Luettavissa: https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/. Luettu 23.9.2024
+Gite, V. 2024. Luettavissa: https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/. Luettu 23.9.2024<br>
 Gite, V. 2024. Linux and Unix host Command Examples. Luettavissa: https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/. Luettu 23.9.2024<br>
 Nair, N. 2024. How to setup Apache Web Server to host a website in Linux. Luettavissa: https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/. Luettu 21.9.2024<br>
 Namecheap. Luettavissa: https://www.namecheap.com/<br>
