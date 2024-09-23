@@ -233,8 +233,22 @@ Nyt pääsin sisälle cnametest.santerivauramo.com Chromen incognito-tilassa. Sa
  ![cnamesuccess](https://github.com/user-attachments/assets/3bb8ed2d-be40-4d21-b5c6-e43296b5f7ba)
 
 
-## Otsikko
+## c) Pubkey
 
+#### Automatisoi kirjautuminen julkisella SSH-avaimella
+
+Tämän tein jo vahingossa kohdassa aa). Kerrataanpa kuitenkin, mitä tuli tehtyä. SSH.com:sta lisää tietoa https://www.ssh.com/academy/ssh/keygen.
+
+Aluksi poistutaan palvelimelta ``exit``, ``ssh-keygen`` luo SSH-avainparin, ``ssh-copy-id santeri@94.237.35.220`` lähettää palvelimelle julkisen avaimen. UpCloudin palvelinta luotaessa oli jo syötettävä julkinen avain.
+
+*valmis klo 9:45*
+
+## d) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla
+
+#### Käytä kumpaakin komentoa kaikkiin nimiin ja vertaa tuloksia. Katso man-sivulta, miten komennot toimivat - esimerkiksi miten 'dig' näyttää kaikki kentät. Analysoi tulokset. Etsi tarvittaessa uusia lähteitä haastaviin kohtiin. Sähköpostin todentamiseen liittyvät SPF ja DMARC -tietojen yksityiskohdat on jätetty vapaaehtoiseksi lisätehtäväksi. Tutkittavat nimet:
+#### - Oma domain-nimesi. Vertaa tuloksia nimen vuokraajan (namecheap.com, name.com...) weppiliittymässä näkyviin asetuksiin.
+#### - Jonkin pikkuyrityksen, kerhon tai yksittäisen henkilön weppisivut. (Ei kuitenkaan kurssikaverin tällä viikolla vuokrattua nimeä).
+#### - Jonkin suuren ja kaikkien tunteman palvelun tiedot.
 
 ## Lähteet
 
