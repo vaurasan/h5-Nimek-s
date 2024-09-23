@@ -256,7 +256,7 @@ En saanut "dig" komennolla tehtyä mitään, enkä saanut sitä myöskään asen
 
 Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloksia. Kokeilin myös ``man grep`` ja monia muita, mikään ei toiminut. Joten kokeilin ``sudo apt-get install man``, ja "man" asentui palvelimelle. Nyt voin käyttää myös mania. Oletuksena "**host**" komennolla voidaan tehdä DNS (Domain Name System) kyselyjä, joko domain-nimellä tai IP-osoitteella. "man host" kertoo myös, että host komennolla voi etsiä myös paljon muitakin asioita käyttäen valinnaisia lisäargumentteja kuten: "-l". CNAME haut pitää tehdä "-t" lisäyksellä.
 
-**Dig**-komento 
+**Dig**-komennon oletuskysely on "A", eli osoite (Address). Domain-nimellä haettaessa siis oletuksena dig näyttää IP-osoitteen.
 
 #### Oma domain vs namecheap.com
 
@@ -274,7 +274,23 @@ Etsin nuo aiemmat linkit, koska ``man dig`` tai ``man host`` ei tuottanut tuloks
 
 IP-osoitteella haettaessa molemmissa näkyy ".in-addr.arpa", eli "Advanced Research Projects Agency", joka liittyy internetin infrastruktuuriin jo ajalta ennen internetiä. Domain name pointer liittyy PTR-recordiin, tästä en kaikkea ihan täysin ymmärtänyt. Jostain syystä namecheapin pointer näyttää ainoastaan "namecheap.com", kun taas minun debiathanissa lukee IP-osoite ja tiedot UpCloudista, tämä lienee ainoastaan nimiasia.
 
-- Dig 
+- Seuraavaksi kokeillaan **dig** komentoa.
+
+![digsanteriv](https://github.com/user-attachments/assets/0710332f-fb83-4ae4-a451-d5c5826023f4)
+
+Tietoa tulee enemmän, kuin odotin. Alussa kerrotaan dig versiosta ja käyttöjärjestelmästä, sekä mitä haettiin. ``dig +short santerivauramo.com`` kertoo ainoastaan IP-osoitteen.
+
+![digipvain](https://github.com/user-attachments/assets/64eb02e5-9173-431c-8ff2-95aee4e55d88)
+
+NS kertoo nimipalvelun, tässä tapauksessa dns2.registrar-servers.com ja dns1.registrar-servers.com
+
+![santerins](https://github.com/user-attachments/assets/d9b58e3f-0245-4b3d-b32f-2e151f40164d)
+
+Namecheapilla nimipalveluja on huomattavasti enemmän:
+
+![namecheapns](https://github.com/user-attachments/assets/dee834c8-2188-4572-9a9a-b99543045998)
+
+
 
 
 
