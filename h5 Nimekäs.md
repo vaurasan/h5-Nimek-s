@@ -320,6 +320,8 @@ Ei yllätä, että youtube.com:n mail is handled by google, samaa palvelua kuite
 
 Tässä meni niin monta tuntia kaiken selvittelyn äärellä, että jätän bonustehtävän välistä. Kaikkineen aikamoinen savotta oli, mutta sitäkin opettavaisempi kokemus.
 
+[30.9.2024 Huom. olen ottanut santerivauramo.com sivut käyttöön toista kurssia varten, joten tämän artikkelin linkit ei enää toimi samalla tavalla]
+
 ## Lähteet
 
 Cloudflare. What is a DNS PTR record?. Luettavissa: https://www.cloudflare.com/learning/dns/dns-records/dns-ptr-record/. Luettu 23.9.2024<br>
