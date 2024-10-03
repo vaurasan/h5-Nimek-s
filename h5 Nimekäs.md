@@ -135,7 +135,7 @@ https://httpd.apache.org/docs/2.4/vhosts/ Täältä löytyi komento ``apachectl 
 
 ![consoleoikeus](https://github.com/user-attachments/assets/d8c286a4-b641-4326-8a8a-5d7ef37d33da)
 
-Loin /var/www kansioon omien sivujen kansion, jonne loin public_html-kansion, tämänhän loin jo aiemmin, mutta ymmärsin ohjeet väärin. Seuraavaksi annoin itselle oikeudet muokata kyseistä kansiota ja loin samanlaisen index.html tiedoston minkä aiemmin loin muualle. Muutin ``sudo micro /etc/apache2/sites-available/santerivauramo.com.conf``:sta seuraavanlaisen:
+Loin /var/www kansioon omien sivujen kansion, jonne loin public_html-kansion, tämänhän loin jo aiemmin, mutta ymmärsin ohjeet väärin. Seuraavaksi annoin itselle oikeudet muokata kyseistä kansiota ja loin samanlaisen index.html tiedoston minkä aiemmin loin muualle. Muutin ``sudo micro /etc/apache2/sites-available/santerivauramo.com.conf``:sta seuraavanlaisen: [3.10.2024 oikeudet eivät ole menneet perille ylimääräisten merkkien vuoksi "#" ja "$"]
 
 ![servernamealias](https://github.com/user-attachments/assets/87cf48ea-10a8-4d7d-a5bd-a3439a3b26fb)
 
@@ -145,7 +145,7 @@ Nyt demonin potkaisun jälkeen pääsin sivuille. Olin jo aiemmin sallinut ``sud
 
 Nyt vaan kopioin html:t kahteen tiedostoon, joten saan linkit toimimaan. www.santerivauramo.com
 
-Huomasin että vasta ``sudo chmod -R 777 /var/www/`` komento antoi luvan muokata tiedostoja normaalin käyttäjän oikeuksin.
+Huomasin että vasta ``sudo chmod -R 777 /var/www/`` komento antoi luvan muokata tiedostoja normaalin käyttäjän oikeuksin. [3.10.2024 koska en ollut oikeasti laittanut mitään oikeuksia]
 
 Loin kansioon siis ``index.html``, ``eka.html``, ja ``toka.html``-tiedostot. Sisällöt näyttävät kutakuinkin kaikissa tältä:
 
