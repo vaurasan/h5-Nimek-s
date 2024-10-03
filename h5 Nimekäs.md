@@ -99,7 +99,7 @@ Kuten kuvassa lukee, täytyy tämän toimiakseen käydä ``/etc/cloud/templates/
 
 ![indexiOn](https://github.com/user-attachments/assets/5a20da86-1f9c-4651-9fe1-02bf2920c010)
 
-Ei ihan vielä se mitä haetaan. Luen asioita [täältä](https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/) ja myös [täältä](https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied). Kävin luomassa /var/www kansioon santerivauramo.com kansion, vaan eipä ollut oikeuksia, joten annoin itselleni oikeudet
+Ei ihan vielä se mitä haetaan. Luen asioita [täältä](https://www.veeble.org/kb/how-to-setup-apache-to-host-a-website-in-linux/) ja myös [täältä](https://stackoverflow.com/questions/1484595/how-to-resolve-var-www-copy-write-permission-denied). Kävin luomassa /var/www kansioon santerivauramo.com kansion, vaan eipä ollut oikeuksia, joten annoin itselleni oikeudet [3.10.2024 Tiedän, että chmod 777 oli huono ajatus, muutin sen myöhemmin järkevämmäksi]
 
 ![chmod777](https://github.com/user-attachments/assets/3c0628d3-cd2a-487e-b85c-4fc54fc8ab14)
 
